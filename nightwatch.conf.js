@@ -6,6 +6,7 @@ module.exports = {
   page_objects_path: "",
   globals_path: "",
   test_workers: true,
+  output: true,
   selenium: {
     start_process: false,
     server_path: "",
@@ -23,7 +24,7 @@ module.exports = {
       launch_url: "http://localhost",
       selenium_port: 4444,
       selenium_host: "localhost",
-      silent: false,
+      silent: true,
       screenshots: {
         enabled: false,
         path: ""

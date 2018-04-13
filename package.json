@@ -6,11 +6,17 @@
   "dependencies": {
     "jest": "^22.4.3",
     "jest-runner-nightwatch": "^0.0.2",
-    "nightwatch": "^0.9.20"
+    "nightwatch": "^0.9.20",
+    "webdriver-manager": "^12.0.6"
   },
   "jest": {
     "runner": "jest-runner-nightwatch",
-    "testMatch": ["**/examples/tests/*.js"]
+    "testMatch": [
+      "**/examples/tests/*.js"
+    ]
+  },
+  "scripts": {
+    "selenium": "webdriver-manager update && webdriver-manager start"
   },
   "jest-runner-nightwatch": {
     "cliOptions": {
